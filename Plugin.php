@@ -83,7 +83,7 @@ class fancyboxJQ_Plugin implements Typecho_Plugin_Interface
         echo '<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>';
         
         $selector = Helper::options()->plugin('fancyboxJQ')->selector;
-        echo '<script>$(document).ready(function(){$("'.$selector.'").each(function(){var _a = $("<a></a>").attr({"href":this.src,"data-fancybox":"gallery","no-pjax":"","data-type":"image","data-caption":this.alt});$(this).wrap(_a);});});</script>';
+        echo '<script>$(document).ready(function(){$("'.$selector.' img").each(function(){var _a = $("<a></a>").attr({"href":this.src,"data-fancybox":"gallery","no-pjax":"","data-type":"image","data-caption":this.alt});$(this).wrap(_a);});});</script>';
 
     }
 }
