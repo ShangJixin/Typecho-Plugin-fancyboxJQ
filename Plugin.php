@@ -5,7 +5,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * 
  * @package fancyboxJQ
  * @author 尚寂新
- * @version 1.0
+ * @version 1.1
  * @link https://github.com/ShangJixin
  */
 class fancyboxJQ_Plugin implements Typecho_Plugin_Interface
